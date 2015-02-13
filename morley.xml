@@ -1,56 +1,24 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_stutter" id="584" x="-60" y="-57">
+  <block type="movement_forward" id="875" x="-39" y="-9">
     <next>
-      <block type="robot_delay" id="586" inline="true">
+      <block type="robot_delay" id="885" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="593">
-            <field name="NUM">1000</field>
+          <block type="math_number" id="886">
+            <field name="NUM">4000</field>
           </block>
         </value>
         <next>
-          <block type="movement_forward" id="638">
+          <block type="movement_reverse" id="896">
             <next>
-              <block type="robot_delay" id="639" inline="true">
+              <block type="robot_delay" id="906" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="640">
+                  <block type="math_number" id="907">
                     <field name="NUM">1000</field>
                   </block>
                 </value>
                 <next>
-                  <block type="led_select" id="649" inline="true">
-                    <field name="ACTION">FLASH</field>
-                    <value name="LED">
-                      <block type="math_number" id="675">
-                        <field name="NUM">5</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_right" id="825">
-                        <next>
-                          <block type="controls_if" id="682" inline="false">
-                            <value name="IF0">
-                              <block type="sensor_button" id="705">
-                                <field name="OBJECT">ENTER</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="robot_delay" id="782" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="783">
-                                    <field name="NUM">2000</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="oled_color" id="793">
-                                    <field name="OBJECT">BLACK</field>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
+                  <block type="comment_comment" id="918">
+                    <field name="TEXT">press button to get reked</field>
                   </block>
                 </next>
               </block>
