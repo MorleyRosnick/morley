@@ -21,8 +21,8 @@
                     <next>
                       <block type="robot_delay" id="353" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="354">
-                            <field name="NUM">2000</field>
+                          <block type="sensor_object" id="488">
+                            <field name="OBJECT">LEFTFRONT</field>
                           </block>
                         </value>
                         <next>
@@ -51,5 +51,8 @@
         </next>
       </block>
     </next>
+  </block>
+  <block type="math_number" id="354" x="64" y="183">
+    <field name="NUM">2000</field>
   </block>
 </xml>
