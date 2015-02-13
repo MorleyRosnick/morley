@@ -34,6 +34,11 @@
                                     <field name="NUM">2000</field>
                                   </block>
                                 </value>
+                                <next>
+                                  <block type="oled_drawtext" id="1087">
+                                    <field name="TEXT">oy m8</field>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
@@ -48,5 +53,8 @@
         </next>
       </block>
     </next>
+  </block>
+  <block type="sensor_button" id="1041" x="-54" y="331">
+    <field name="OBJECT">UP</field>
   </block>
 </xml>
