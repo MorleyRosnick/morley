@@ -21,8 +21,8 @@
                     <next>
                       <block type="robot_delay" id="353" inline="true">
                         <value name="DELAY">
-                          <block type="sensor_object" id="488">
-                            <field name="OBJECT">LEFTFRONT</field>
+                          <block type="math_number" id="354">
+                            <field name="NUM">2000</field>
                           </block>
                         </value>
                         <next>
@@ -35,7 +35,20 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_left" id="376"></block>
+                                  <block type="movement_left" id="376">
+                                    <next>
+                                      <block type="controls_if" id="541" inline="false">
+                                        <value name="IF0">
+                                          <block type="sensor_light" id="548">
+                                            <field name="LIGHT">REAR</field>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="movement_stutter" id="498"></block>
+                                        </statement>
+                                      </block>
+                                    </next>
+                                  </block>
                                 </next>
                               </block>
                             </next>
@@ -51,8 +64,5 @@
         </next>
       </block>
     </next>
-  </block>
-  <block type="math_number" id="354" x="64" y="183">
-    <field name="NUM">2000</field>
   </block>
 </xml>
