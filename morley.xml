@@ -26,7 +26,8 @@
                           </block>
                         </value>
                         <next>
-                          <block type="movement_right" id="982">
+                          <block type="oled_drawtext" id="1087">
+                            <field name="TEXT">oy m8</field>
                             <next>
                               <block type="robot_delay" id="983" inline="true">
                                 <value name="DELAY">
@@ -34,11 +35,6 @@
                                     <field name="NUM">2000</field>
                                   </block>
                                 </value>
-                                <next>
-                                  <block type="oled_drawtext" id="1087">
-                                    <field name="TEXT">oy m8</field>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
