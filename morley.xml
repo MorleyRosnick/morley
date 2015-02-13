@@ -33,11 +33,6 @@
                                 <field name="OBJECT">ENTER</field>
                               </block>
                             </value>
-                            <statement name="DO0">
-                              <block type="oled_drawtext" id="781">
-                                <field name="TEXT">do touch that</field>
-                              </block>
-                            </statement>
                             <next>
                               <block type="robot_delay" id="782" inline="true">
                                 <value name="DELAY">
