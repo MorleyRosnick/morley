@@ -34,11 +34,6 @@
                                     <field name="NUM">2000</field>
                                   </block>
                                 </value>
-                                <next>
-                                  <block type="oled_drawtext" id="32">
-                                    <field name="TEXT">hi</field>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
