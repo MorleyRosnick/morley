@@ -54,7 +54,4 @@
       </block>
     </next>
   </block>
-  <block type="sensor_button" id="1041" x="-54" y="331">
-    <field name="OBJECT">UP</field>
-  </block>
 </xml>
