@@ -17,8 +17,21 @@
                   </block>
                 </value>
                 <next>
-                  <block type="comment_comment" id="918">
-                    <field name="TEXT">press button to get reked</field>
+                  <block type="movement_stutter" id="928">
+                    <next>
+                      <block type="robot_delay" id="929" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="930">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="971" inline="true">
+                            <field name="VAR">item</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
