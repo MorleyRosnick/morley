@@ -26,7 +26,22 @@
                           </block>
                         </value>
                         <next>
-                          <block type="movement_right" id="20"></block>
+                          <block type="movement_right" id="20">
+                            <next>
+                              <block type="robot_delay" id="21" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="22">
+                                    <field name="NUM">2000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_drawtext" id="32">
+                                    <field name="TEXT">hi</field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
