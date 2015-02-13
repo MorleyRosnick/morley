@@ -25,27 +25,31 @@
                       </block>
                     </value>
                     <next>
-                      <block type="controls_if" id="682" inline="false">
-                        <value name="IF0">
-                          <block type="sensor_button" id="705">
-                            <field name="OBJECT">ENTER</field>
-                          </block>
-                        </value>
-                        <statement name="DO0">
-                          <block type="oled_drawtext" id="781">
-                            <field name="TEXT">do touch that</field>
-                          </block>
-                        </statement>
+                      <block type="movement_right" id="825">
                         <next>
-                          <block type="robot_delay" id="782" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="783">
-                                <field name="NUM">2000</field>
+                          <block type="controls_if" id="682" inline="false">
+                            <value name="IF0">
+                              <block type="sensor_button" id="705">
+                                <field name="OBJECT">ENTER</field>
                               </block>
                             </value>
+                            <statement name="DO0">
+                              <block type="oled_drawtext" id="781">
+                                <field name="TEXT">do touch that</field>
+                              </block>
+                            </statement>
                             <next>
-                              <block type="oled_color" id="793">
-                                <field name="OBJECT">BLACK</field>
+                              <block type="robot_delay" id="782" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="783">
+                                    <field name="NUM">2000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_color" id="793">
+                                    <field name="OBJECT">BLACK</field>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
