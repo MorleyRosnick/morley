@@ -1,55 +1,51 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="331" x="2" y="25">
+  <block type="movement_stutter" id="584" x="-60" y="-57">
     <next>
-      <block type="robot_delay" id="377" inline="true">
+      <block type="robot_delay" id="586" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="378">
-            <field name="NUM">2000</field>
+          <block type="math_number" id="593">
+            <field name="NUM">1000</field>
           </block>
         </value>
         <next>
-          <block type="movement_reverse" id="559">
+          <block type="movement_forward" id="638">
             <next>
-              <block type="robot_delay" id="341" inline="true">
+              <block type="robot_delay" id="639" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="342">
-                    <field name="NUM">5000</field>
+                  <block type="math_number" id="640">
+                    <field name="NUM">1000</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_right" id="352">
+                  <block type="led_select" id="649" inline="true">
+                    <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="math_number" id="675">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="robot_delay" id="353" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="354">
-                            <field name="NUM">2000</field>
+                      <block type="controls_if" id="682" inline="false">
+                        <value name="IF0">
+                          <block type="sensor_button" id="705">
+                            <field name="OBJECT">ENTER</field>
                           </block>
                         </value>
+                        <statement name="DO0">
+                          <block type="oled_drawtext" id="781">
+                            <field name="TEXT">do touch that</field>
+                          </block>
+                        </statement>
                         <next>
-                          <block type="movement_reverse" id="364">
+                          <block type="robot_delay" id="782" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="783">
+                                <field name="NUM">2000</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="robot_delay" id="365" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="366">
-                                    <field name="NUM">2000</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="movement_left" id="376">
-                                    <next>
-                                      <block type="controls_if" id="541" inline="false">
-                                        <value name="IF0">
-                                          <block type="sensor_light" id="548">
-                                            <field name="LIGHT">REAR</field>
-                                          </block>
-                                        </value>
-                                        <statement name="DO0">
-                                          <block type="movement_stutter" id="498"></block>
-                                        </statement>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
+                              <block type="oled_color" id="793">
+                                <field name="OBJECT">BLACK</field>
                               </block>
                             </next>
                           </block>
