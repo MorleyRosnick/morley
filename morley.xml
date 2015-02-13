@@ -19,31 +19,12 @@
                 <next>
                   <block type="movement_stutter" id="928">
                     <next>
-                      <block type="oled_setcursor" id="1104" inline="true">
-                        <value name="STARTX">
-                          <block type="math_number" id="1111">
-                            <field name="NUM">10</field>
+                      <block type="robot_delay" id="929" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="930">
+                            <field name="NUM">1000</field>
                           </block>
                         </value>
-                        <value name="STARTY">
-                          <block type="math_number" id="1118">
-                            <field name="NUM">10</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="oled_drawtext" id="1190">
-                            <field name="TEXT">hey</field>
-                            <next>
-                              <block type="robot_delay" id="929" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="930">
-                                    <field name="NUM">1000</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
